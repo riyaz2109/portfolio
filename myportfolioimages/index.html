@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Riyaz portfoilo website</title>
+    <link rel="Stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/224aa97d2d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="myportfolioimages/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#hearder">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfoilo">projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Software Engineer
+                </p>
+                <h1>Hi, I'm <span>Riyaz</span><br>From Hyderabad</h1>
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myportfolioimages/myimage22.jpg">
+                </div> 
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am an Electronics and Communication Engineering (ECE) student with strong skills in both software and core ECE subjects. I have hands-on experience in programming languages such as Java, Python, and SQL, and I'm also proficient in web development using HTML, CSS, and JavaScript. My academic foundation includes key ECE topics like VLSI and embedded systems. I enjoy building user-friendly web applications and continuously expanding my technical knowledge. I'm passionate about combining electronics with software to create smart and innovative solutions.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentap('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentap('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Java/pythone/C language</li>
+                         <li><span>Database</span><br>SQl</li>
+                          <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>CMR Engineering college, Hyderabad   2021-2025</span><br>Bachelor of Technology - Electronics and Communication (ECE) - 8(CGPA)</li>
+                         <li><span>Little Flower Junior college, Bhadrachalam  2019-2021</span><br>Intermediate - 72%</li>
+                          <li><span>St. Theresa’s High School, Bhadrachalam  2018-2019</span><br>Secondary School of Certificate - 7.5(CGPA)</li>
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfoilo">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="myportfolioimages/project2.jpg">
+                    <div class="layer">
+                        <h3>Auto-mob mechanism</h3>
+                        <p>Engine repair & diagnostics with convenient online booking and doorstep service expert solutions for all car issues, delivered at your location.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="myportfolioimages/project3.jpg">
+                    <div class="layer">
+                        <h3>Personal portfolio Website</h3>
+                        <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript, showcasing my skills, projects, education, experience, and contact information.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                   
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="myportfolioimages/project4.jpg">
+                    <div class="layer">
+                        <h3> Heart Disease Prediction</h3>
+                        <p>A heart disease prediction project using supervised machine learning algorithms to analyze patient data and classify risk for early medical intervention.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more</a>
+        </div>
+
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> riyazpashashaik2109@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (+91) 9866176907</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="myportfolioimages/RIYAZ-RESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Name" placeholder="Your Email" required>
+                        <textarea type="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"></div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentap(tapname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tapname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
